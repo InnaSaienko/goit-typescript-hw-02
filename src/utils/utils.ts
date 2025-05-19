@@ -4,11 +4,11 @@ export const formattedName = (name: string): string => {
     }).join(' ');
 };
 
-export const formattedDate = ({str}: string) => {
-    let date = new Date(str);
-    let day = date.getDate();
-    let month = date.toLocaleString('default', {month: 'short'});
-    let year = date.getFullYear();
+export const formattedDate = (str: string) => {
+    const date = new Date(str);
+    const day = date.getDate();
+    const month = date.toLocaleString('default', {month: 'short'});
+    const year = date.getFullYear();
 
     return `${day} ${month} ${year}`;
 }
