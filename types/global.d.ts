@@ -4,7 +4,6 @@ interface FetchPhotoParams {
     photosPerPage: string;
     signal?: AbortSignal;
 }
-type UserProperty = string | { [key: string]: string };
 
 interface User {
     id: string;
