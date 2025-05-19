@@ -4,11 +4,8 @@ export const formattedName = (name: string): string => {
     }).join(' ');
 };
 
-interface DateStr {
-    dateStr: string;
-}
-export const formattedDate = ({dateStr}: DateStr) => {
-    let date = new Date(dateStr);
+export const formattedDate = ({str}: string) => {
+    let date = new Date(str);
     let day = date.getDate();
     let month = date.toLocaleString('default', {month: 'short'});
     let year = date.getFullYear();
