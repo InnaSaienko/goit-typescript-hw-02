@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const accessKey = import.meta.env.VITE_UNSPLASH_API_KEY;
+const accessKey = "zGdrmCXN7cTiKLUPYyDHIt-5Mi6bHP-uk2sW_YEaHfQ;"
 const pathSearch = "/search/photos";
 
 export const fetchPhotos = async ({query, page, perPage, signal}: FetchPhotoParams): Promise<Photo[]> => {
