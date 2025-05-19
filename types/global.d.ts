@@ -1,8 +1,8 @@
 interface FetchPhotoParams {
     query: string;
-    page: string;
-    photosPerPage: string;
+    page: number;
     signal?: AbortSignal;
+    perPage: number;
 }
 
 interface User {
