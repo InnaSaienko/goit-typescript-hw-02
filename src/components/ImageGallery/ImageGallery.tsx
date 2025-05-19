@@ -3,7 +3,7 @@ import s from "./ImageGallery.module.css"
 
 interface ImageGalleryProps {
     photos: Photo[];
-    onSelect: (photo: Photo) => void;
+    onSelect: (photo: Photo) => Photo;
 }
 const ImageGallery = ({photos, onSelect} : ImageGalleryProps ) => {
     return (
