@@ -3,7 +3,7 @@ import axios from 'axios';
 const accessKey = import.meta.env.VITE_UNSPLASH_API_KEY;
 const pathSearch = "/search/photos";
 
-export const useFetchPhotos = async ({query, page, perPage, signal}: FetchPhotoParams): Promise<object[]> => {
+export const fetchPhotos = async ({query, page, perPage, signal}: FetchPhotoParams): Promise<Photo[]> => {
     const url = new URL(pathSearch, 'https://api.unsplash.com');
 
     if (query) {
