@@ -1,6 +1,10 @@
 import type {JSX} from "react";
 
-const ErrorMessage = (err:string): JSX.Element => {
+type ErrorMessageProps = {
+    err: string;
+};
+
+const ErrorMessage = ({err} : ErrorMessageProps): JSX.Element => {
     return (
         <div>`Error: {err}`</div>
     );

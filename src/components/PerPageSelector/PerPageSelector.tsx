@@ -2,15 +2,15 @@ import s from './PerPageSelector.module.css';
 import type {JSX} from "react";
 
 interface PerPageSelectorProps {
-    photosPerPage: number;
-    onChange: (photosPerPage: number) => void;
+    perPage: number;
+    onChange: (perPage: number) => void;
 }
 
-const PerPageSelector = ({photosPerPage, onChange}: PerPageSelectorProps): JSX.Element => {
+const PerPageSelector = ({perPage, onChange}: PerPageSelectorProps): JSX.Element => {
     return (
         <div className={s.perPage}>
             <select
-                value={photosPerPage}
+                value={perPage}
                 onChange={(e) => onChange(Number(e.target.value))}
                 className={s.perPageSelector}>
                 <option value='10'>10</option>
